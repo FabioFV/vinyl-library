@@ -22,7 +22,7 @@ public class Artist
     @Column(name = "BORN_DATE")
     private Date releaseDate;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "INSTRUMENT_ID")
     private Instrument instrument;
 

@@ -35,11 +35,11 @@ public class Record
     private int size;
     private double speed;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "VINYL_TYPE_ID")
     private VinylType type;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "GENRE_ID")
     private Genre genre;
 
