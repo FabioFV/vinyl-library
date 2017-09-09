@@ -23,6 +23,16 @@ public class RecordList
     @JoinTable(name = "LIST_RECORD")
     private List<Record> list;
 
+    public long getId()
+    {
+        return id;
+    }
+
+    public void setId(long id)
+    {
+        this.id = id;
+    }
+
     public String getName()
     {
         return name;
